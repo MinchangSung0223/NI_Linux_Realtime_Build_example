@@ -26,4 +26,12 @@
     echo 'export PATH="$PATH:/usr/local/oecore-x86_64/sysroots/x86_64-nilrtsdk-linux/usr/bin"' >> ~/.bashrc
     source ~/.basrhc
 ```
+만약 오류가 나는 경우
+```bash
+    unset LD_LIBRARY_PATH    
+    echo 'export PATH="$PATH:/usr/local/oecore-x86_64/sysroots/x86_64-nilrtsdk-linux/usr/bin"' >> ~/.bashrc
+    source ~/.basrhc
+```
+
+
 ## 2. 
