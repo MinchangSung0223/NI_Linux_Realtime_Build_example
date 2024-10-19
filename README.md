@@ -21,17 +21,19 @@
 ```bash
    sudo ./oecore-x86_64-core2-64-toolchain-6.0.sh
 ```
-4. PATH설정
+![image](https://github.com/user-attachments/assets/50d778c5-1418-4683-a740-cd2609e67dd7)
+
 ```bash
+   . /usr/local/oecore-x86_64/environment-setup-core2-64-nilrt-linux
+```
+만약 오류가 나는 경우 PATH 설정 후 재진행
+```bash
+    unset LD_LIBRARY_PATH
     echo 'export PATH="$PATH:/usr/local/oecore-x86_64/sysroots/x86_64-nilrtsdk-linux/usr/bin"' >> ~/.bashrc
     source ~/.basrhc
+    source /usr/local/oecore-x86_64/environment-setup-core2-64-nilrt-linux
 ```
-만약 오류가 나는 경우
-```bash
-    unset LD_LIBRARY_PATH    
-    echo 'export PATH="$PATH:/usr/local/oecore-x86_64/sysroots/x86_64-nilrtsdk-linux/usr/bin"' >> ~/.bashrc
-    source ~/.basrhc
-```
+
 
 
 ## 2. 
