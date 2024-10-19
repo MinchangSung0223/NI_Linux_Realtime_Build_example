@@ -11,6 +11,19 @@
 
 버전은 CompactRio버전에 알맞게 선택 필요. CompactRio 9030기준 2018-2019 선택.
 
-### 1.2
-
+### 1.2 툴체인 설치
+1. Open a terminal and navigate to the directory where the toolchain was downloaded.
+2. 다운 받은 툴체인파일의 권한을 +x로 변경( root rwx user r-x gest r-x)
+```bash
+    chmod +x <toolchain>.sh
+```
+3. 툴체인 설치
+```bash
+   sudo ./<toolchain>.sh
+```
+4. PATH설정
+```bash
+    echo 'export PATH="$PATH:/usr/local/oecore-x86_64/sysroots/x86_64-nilrtsdk-linux/usr/bin"' >> ~/.bashrc
+    source ~/.basrhc
+```
 ## 2. 
