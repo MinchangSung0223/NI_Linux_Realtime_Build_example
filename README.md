@@ -41,5 +41,25 @@
 
 ## 2. 예제 빌드 방법
 1. 이 레포지토리에서 예제 다운.
-   
-3. 
+   ```bash
+       git clone https://github.com/MinchangSung0223/NI_Linux_Realtime_Build_example
+   ```
+2. CMake설정
+```bash
+    sudo apt-get install cmake-qt-gui
+```
+```bash
+      mkdir  build
+      cd build
+      cmake-gui ..
+```
+![image](https://github.com/user-attachments/assets/08c9fdba-caa7-4d90-86d6-f5347f555a2e)
+
+3. 먼저 CompactRio용으로 빌드하여 so파일 생성
+ ```bash
+    cmake .. -DBUILD_FOR_COMPACTRIO=ON -DBUILD_FOR_WINDOWS=OFF
+ ```
+4. Windows용으로 빌드하여 dll파일 생성
+    ```bash
+    cmake .. -DBUILD_FOR_COMPACTRIO=OFF -DBUILD_FOR_WINDOWS=ON
+ ```
