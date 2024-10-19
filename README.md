@@ -15,11 +15,11 @@
 1. Open a terminal and navigate to the directory where the toolchain was downloaded.
 2. 다운 받은 툴체인파일의 권한을 +x로 변경( root rwx user r-x gest r-x)
 ```bash
-    chmod +x <toolchain>.sh
+    chmod +x oecore-x86_64-core2-64-toolchain-6.0.sh
 ```
 3. 툴체인 설치
 ```bash
-   sudo ./<toolchain>.sh
+   sudo ./oecore-x86_64-core2-64-toolchain-6.0.sh
 ```
 4. PATH설정
 ```bash
