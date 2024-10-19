@@ -81,6 +81,6 @@
 6. (중요) Library name or path를 dll에서 변경된 so파일 위치로 지정 
 ![image](https://github.com/user-attachments/assets/692458a6-b060-4ea9-8ab2-2d284d21a967)
 7. Thread를 Run in any thread로 지정.( 이 경우에만Realtime)
-
+8. Labiew에서 생성된 Node를 CompactRio용에 붙여넣고 빌드.
 
 
