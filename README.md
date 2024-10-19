@@ -33,7 +33,13 @@
     source ~/.basrhc
     source /usr/local/oecore-x86_64/environment-setup-core2-64-nilrt-linux
 ```
+4. Windows dll생성을 위한 toolchain설치(만약 Labview가 Linux에 설치되어 있다면 이 작업은 불필요, 자신의 윈도우 시스템이 32bit인지 64bit인지 확인필요.)
+```bash
+   sudo apt-get install mingw-w64
+```
 
 
-
-## 2. 
+## 2. 예제 빌드 방법
+1. 이 레포지토리에서 예제 다운.
+   
+3. 
