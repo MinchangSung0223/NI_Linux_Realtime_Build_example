@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f1cb9acb-cd3b-42ff-9c68-eab837f7b5f3)# NI_Linux_Realtime_Build_example
+# NI_Linux_Realtime_Build_example
 
 [참고 사이트] https://nilrt-docs.ni.com/cross_compile/config_dev_system.html
 
