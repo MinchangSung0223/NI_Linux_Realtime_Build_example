@@ -1,4 +1,4 @@
-# NI_Linux_Realtime_Build_example
+![image](https://github.com/user-attachments/assets/f1cb9acb-cd3b-42ff-9c68-eab837f7b5f3)# NI_Linux_Realtime_Build_example
 
 [참고 사이트] https://nilrt-docs.ni.com/cross_compile/config_dev_system.html
 
@@ -63,3 +63,24 @@
     ```bash
     cmake .. -DBUILD_FOR_COMPACTRIO=OFF -DBUILD_FOR_WINDOWS=ON
  ```
+![image](https://github.com/user-attachments/assets/6b32b666-dcbd-41c6-8853-c7e280d72620)
+
+## 3.  CompactRio에 넣는법
+1. NI MAX를 이용하여 sshd접속 허가 설정, CompactRio 아이디와 password 확인.
+2. ssh를 통해 CompactRio의 ip주소에 접속
+```bash
+    ssh admin@COMPACTRIO_IP_ADDRESS
+```
+3. 빌드해 놓은 libmylib_crio.so파일을 compactRio에 복사.
+```bash
+    scp libmylib_crio.so admin@COMPACTRIO_IP_ADDRESS:/home/lvuser/natinst/bin/
+    scp libmylib_crio.so admin@COMPACTRIO_IP_ADDRESS:/usr/local/lib/
+```
+4. (Windows Labview기준) mylib_win.dll파일을 CompactRIO에 넣는 so파일 이름과 동일하게 변경. (mylib_win.dll -> libmylib_crio.so)
+5. Labview에서 DLL 호출 (참고 : https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YGggCAG&l=ko-KR)
+6. (중요) Library name or path를 dll에서 변경된 so파일 위치로 지정 
+![image](https://github.com/user-attachments/assets/692458a6-b060-4ea9-8ab2-2d284d21a967)
+7. Thread를 Run in any thread로 지정.( 이 경우에만Realtime)
+
+
+
