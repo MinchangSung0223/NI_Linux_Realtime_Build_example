@@ -1,0 +1,1 @@
+i686-w64-mingw32-gcc -fPIC -m32  -shared -Wl,-soname,liegrouprobotics.dll -o liegrouprobotics.dll CMakeFiles/liegrouprobotics.dir/src/liegrouprobotics.c.o 

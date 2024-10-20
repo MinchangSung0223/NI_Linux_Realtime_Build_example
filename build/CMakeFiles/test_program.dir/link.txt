@@ -1,0 +1,1 @@
+i686-w64-mingw32-g++  -m32  -m32 CMakeFiles/test_program.dir/src/callingSharedObject_windows.cpp.o  -o test_program  -Wl,-rpath,/home/robot/workspace/NI_Linux_Realtime_Build_example/build liegrouprobotics.dll 

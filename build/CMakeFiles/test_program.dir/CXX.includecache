@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/robot/workspace/NI_Linux_Realtime_Build_example/src/callingSharedObject_windows.cpp
+iostream
+-
+windows.h
+-
+
